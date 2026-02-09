@@ -202,10 +202,12 @@ def like_api():
     after_likes = after.AccountInfo.Likes if after else before_likes
 
     return jsonify({
-        "UID": uid,
-        "LikesBefore": before_likes,
-        "LikesAfter": after_likes,
-        "LikesAdded": after_likes - before_likes,
+        "LikesGivenByAPI": likes_increment,
+        "LikesafterCommand": after_like_count,
+        "LikesbeforeCommand": before_like_count,
+        "PlayerNickname": player_nickname_from_profile,
+        "UID": actual_player_uid_from_profile,
+        "status": request_status,
         "OB": RELEASE_VERSION
     })
 
