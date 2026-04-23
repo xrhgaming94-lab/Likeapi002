@@ -186,7 +186,7 @@ def make_profile_check_request(encrypted_profile_payload, server_name, token_dic
     elif server_name in {"BR", "US", "SAC", "NA"}:
         url = "https://client.us.freefiremobile.com/GetPlayerPersonalShow"
     else:
-        url = "https://clientbp.ggblueshark.com/GetPlayerPersonalShow"
+        url = "https://clientbp.ggblueshark/GetPlayerBriefInfo"
 
     edata = bytes.fromhex(encrypted_profile_payload)
     headers = {
