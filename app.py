@@ -276,7 +276,7 @@ def handle_requests():
     elif server_name_param in {"BR", "US", "SAC", "NA"}:
         like_api_url = "https://client.us.freefiremobile.com/LikeProfile"
     else:
-        like_api_url = "https://clientbp.ggpolarbear.com/GetPlayerPersonalShow"
+        like_api_url = "https://clientbp.ggpolarbear.com/LikeProfile"
 
     if tokens_for_like_sending:
         print(f"Using token batch for {server_name_param} (size {len(tokens_for_like_sending)}) to send likes.")
