@@ -14,7 +14,7 @@ import urllib3
 import random
 
 # Configuration
-TOKEN_BATCH_SIZE = 189
+TOKEN_BATCH_SIZE = 999
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Global State for Batch Management
